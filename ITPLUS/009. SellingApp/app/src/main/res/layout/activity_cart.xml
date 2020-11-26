@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Giỏ hàng"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"></androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/lvCart"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"></ListView>
+
+    <LinearLayout
+        android:background="#FAFAFA"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#F44336"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Tổng tiền"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/txtvTotal"
+                android:textColor="#F44336"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnThanhtoan"
+            android:textColor="#4CAF50"
+            android:text="Thanh toán"
+            android:backgroundTint="#F4F4F4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:id="@+id/btnMuahang"
+            android:textColor="#4CAF50"
+            android:text="Tiếp tục mua hàng"
+            android:backgroundTint="#F4F4F4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

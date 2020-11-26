@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnuShowAddVatTu"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always"
+        android:title="Thêm mới vật tư">
+    </item>
+    <item
+        android:title="Đăng nhập"
+        android:id="@+id/mnuLogin">
+    </item>
+    <item android:title="Setting">
+        <menu>
+            <item android:title="Camera"></item>
+            <item android:title="Message"></item>
+            <item android:title="Call Phone"></item>
+        </menu>
+    </item>
+    <item android:title="About">
+
+    </item>
+    <item android:title="Exit"></item>
+</menu>

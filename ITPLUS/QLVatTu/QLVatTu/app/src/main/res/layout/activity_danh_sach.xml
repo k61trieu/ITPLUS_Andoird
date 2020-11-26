@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center|top"
+    tools:context=".DanhSachActivity">
+    <Button
+        android:onClick="themVatTu"
+        android:id="@+id/btnAdd"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:text="Thêm vật tư"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+    <ListView
+        android:id="@+id/lvDanhSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

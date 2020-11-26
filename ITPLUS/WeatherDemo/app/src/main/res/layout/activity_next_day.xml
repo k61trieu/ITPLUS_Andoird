@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#7fffd4"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextDayActivity">
+    <Button
+        android:background="#5EECC9C9"
+        android:icon="@android:drawable/ic_input_add"
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:id="@+id/tvCityName"
+        android:text="City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <ListView
+        android:id="@+id/lvListOfDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#FF0101"
+            android:textStyle="bold"
+            android:layout_weight="8"
+            android:id="@+id/txtHoTen"
+            android:text="Họ Tên"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="right"
+            android:layout_weight="1"
+            android:id="@+id/btnSua"
+            android:text="sửa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:gravity="right"
+            android:layout_weight="1"
+            android:id="@+id/btnXoa"
+            android:text="xóa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#00BCD4"
+            android:layout_weight="5"
+            android:id="@+id/txtNgaySinh"
+            android:text="ngày sinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textColor="#00BCD4"
+            android:layout_weight="5"
+            android:id="@+id/txtDiaChi"
+            android:text="địa chỉ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

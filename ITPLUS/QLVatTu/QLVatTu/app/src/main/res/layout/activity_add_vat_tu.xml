@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center|top"
+    tools:context=".AddVatTuActivity">
+
+    <TextView
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:text="Thêm mới vật tư"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:hint="Nhập tên vật tư"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:lines="3"
+        android:inputType="textMultiLine"
+        android:hint="Nhập mô tả vật tư"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:onClick="openImage"
+            android:src="@drawable/camera"
+            android:id="@+id/imgOpenCam"
+            android:layout_width="60dp"
+            android:layout_height="70dp"></ImageView>
+        <ImageView
+            android:src="@drawable/no_preview"
+            android:id="@+id/imgPreview"
+            android:layout_width="230dp"
+            android:layout_height="240dp"></ImageView>
+        <ImageView
+            android:src="@drawable/gallery"
+            android:id="@+id/imgOpenGal"
+            android:layout_width="60dp"
+            android:layout_height="70dp"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnAddToList"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:text="Thêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnCancel"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:text="Hủy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+</LinearLayout>

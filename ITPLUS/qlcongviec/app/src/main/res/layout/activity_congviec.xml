@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CongviecActivity">
+    <EditText
+        android:id="@+id/edtTieuDe"
+        android:hint="Tiêu Đề"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:id="@+id/edtNoiDung"
+        android:hint="Nội Dung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:backgroundTint="#EF1707"
+            android:id="@+id/btnThem"
+            android:layout_weight="1"
+            android:text="Lưu cong việc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:backgroundTint="#00008B"
+            android:id="@+id/btnHuy"
+            android:layout_weight="1"
+            android:text="Trở về"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+</LinearLayout>
